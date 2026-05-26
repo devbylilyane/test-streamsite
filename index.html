@@ -3,37 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Case Study: Redesign UI - Lilyane</title>
+    <title>LILYtab | Streaming</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-   <header class="navbar">
-        <div class="logo">LILY<span>FLIX</span></div>
-        <a href="#" class="btn-signin">Maquette UI/UX</a>
-    </header>
+    <nav class="navbar">
+        <a href="#" class="logo">LILY<span>tab</span></a>
+        <a href="#" class="btn-signin">Explorer</a>
+    </nav>
 
-    <section class="hero">
-        <div class="hero-overlay"></div> 
+    <header class="hero">
         <div class="hero-content">
-            <h1>L'expérience Streaming, repensée par Lilyane<span>.</span></h1>
-            <p>Étude de cas UI/UX : Optimisation du parcours utilisateur.</p>
+            <h1>L'expérience streaming réinventée.</h1>
+            <p>Découvrez votre catalogue de films et séries avec élégance.</p>
             
-            <div class="email-form">
-                <p style="color: #D1317A; font-weight: bold; margin-bottom: 10px;">[ ACCÈS INTERFACE DE TEST ]</p>
-                
-                <div class="input-group">
-                    <div class="inputs-container">
-                        <input type="text" id="demoUser" placeholder="Identifiant de démo">
-                        <input type="text" id="demoPass" placeholder="Code d'accès (Ex: 123456)">
-                    </div>
-                    <button class="btn-commencer" id="btnStart">Lancer l'aperçu ></button>
+            <div class="input-group">
+                <div class="inputs-container">
+                    <input type="text" id="demoUser" placeholder="Identifiant">
+                    <input type="password" id="demoPass" placeholder="Mot de passe">
+                    <div id="error-message"></div>
                 </div>
-                
-                <p id="error-message"></p>
+                <button id="btnStart" class="btn-commencer">Tester le Design</button>
             </div>
         </div>
-    </section>
+    </header>
 
     <script src="script.js"></script>
 </body>

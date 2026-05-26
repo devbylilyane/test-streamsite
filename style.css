@@ -1,34 +1,50 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LILYtab | Streaming</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+:root {
+    --accent-lily: #D1317A;
+    --bg-black: #000;
+}
 
-    <nav class="navbar">
-        <a href="#" class="logo">LILY<span>tab</span></a>
-        <a href="#" class="btn-signin">Explorer</a>
-    </nav>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Helvetica Neue', Arial, sans-serif; }
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>L'expérience streaming réinventée.</h1>
-            <p>Découvrez votre catalogue de films et séries avec élégance.</p>
-            
-            <div class="input-group">
-                <div class="inputs-container">
-                    <input type="text" id="demoUser" placeholder="Identifiant">
-                    <input type="password" id="demoPass" placeholder="Mot de passe">
-                    <div id="error-message"></div>
-                </div>
-                <button id="btnStart" class="btn-commencer">Tester le Design</button>
-            </div>
-        </div>
-    </header>
+body { background-color: var(--bg-black); color: #fff; overflow-x: hidden; }
 
-    <script src="script.js"></script>
-</body>
-</html>
+/* Navbar */
+.navbar { display: flex; justify-content: space-between; align-items: center; padding: 25px 8%; position: absolute; width: 100%; z-index: 20; }
+.logo { font-size: 1.8rem; font-weight: 900; color: var(--accent-lily); text-decoration: none; }
+.logo span { color: #fff; }
+
+.btn-signin { background-color: var(--accent-lily); color: white; padding: 8px 20px; border-radius: 4px; text-decoration: none; font-weight: bold; transition: 0.3s; }
+.btn-signin:hover { background-color: #fff; color: var(--accent-lily); }
+
+/* Hero Section */
+.hero { 
+    height: 100vh; 
+    width: 100%;
+    /* Dégradé sombre profond qui part d'un gris très foncé vers un noir pur */
+    background: linear-gradient(135deg, #1a1a1a 0%, #000000 100%);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    padding: 0 20px;
+}
+.hero-content { animation: fadeIn 1.2s ease-out; }
+
+/* Inputs & Form */
+.input-group { width: 100%; max-width: 450px; margin: 20px auto; }
+.inputs-container input { 
+    width: 100%; padding: 18px; margin-bottom: 15px; 
+    background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.2); 
+    color: white; border-radius: 8px; transition: 0.3s; outline: none;
+}
+.inputs-container input:focus { border-color: var(--accent-lily); background: rgba(0,0,0,0.5); }
+
+#error-message { color: #ff5555; background: rgba(255,85,85,0.1); padding: 10px; border-radius: 5px; margin-bottom: 15px; display: none; }
+
+.btn-commencer { 
+    width: 100%; padding: 16px; background: var(--accent-lily); color: white; 
+    border: none; border-radius: 4px; font-weight: 700; cursor: pointer; transition: 0.3s;
+}
+.btn-commencer:hover { background: #ff1f81; transform: scale(1.02); }
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }

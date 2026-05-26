@@ -1,162 +1,34 @@
-/* 1. SETUP & VARIABLES Lilyane */
-:root {
-    --accent-lily: #D1317A; /* Ton rose du portfolio */
-    --lily-red-alt: #b9090b;
-}
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LILYtab | Streaming</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-/* RESET ET BASES */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-}
+    <nav class="navbar">
+        <a href="#" class="logo">LILY<span>tab</span></a>
+        <a href="#" class="btn-signin">Explorer</a>
+    </nav>
 
-body {
-    background-color: #000;
-    color: #fff;
-    overflow-x: hidden;
-}
+    <header class="hero">
+        <div class="hero-content">
+            <h1>L'expérience streaming réinventée.</h1>
+            <p>Découvrez votre catalogue de films et séries avec élégance.</p>
+            
+            <div class="input-group">
+                <div class="inputs-container">
+                    <input type="text" id="demoUser" placeholder="Identifiant">
+                    <input type="password" id="demoPass" placeholder="Mot de passe">
+                    <div id="error-message"></div>
+                </div>
+                <button id="btnStart" class="btn-commencer">Tester le Design</button>
+            </div>
+        </div>
+    </header>
 
-/* Ma barre de navigation */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 25px 8%;
-    position: absolute;
-    width: 100%;
-    z-index: 20;
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: 900;
-    color: var(--accent-lily); /* Ton rose */
-    letter-spacing: -1px;
-    text-decoration: none;
-}
-
-.logo span {
-    color: #fff; /* Le "FLIX" en blanc */
-}
-/* Mon bouton (L'EXPLORATEUR) */
-a.btn-signin, .btn-signin {
-    background-color: var(--accent-lily) !important;
-    color: white !important;
-    padding: 10px 20px !important;
-    border: none !important;
-    border-radius: 4px !important;
-    font-weight: bold !important;
-    cursor: pointer !important;
-    text-decoration: none !important;
-    display: inline-block !important;
-    font-size: 0.85rem !important;
-    transition: 0.3s !important;
-}
-
-a.btn-signin:hover {
-    background-color: #fff !important;
-    color: var(--accent-lily) !important;
-}
-
-/* Mon image de fond */
-.hero {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    /* J'ai remplacé l'image Netflix par une image abstraite sombre */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
-                      url('https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=2069&auto=format&fit=crop');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    text-align: center;
-    padding: 0 20px;
-}
-
-/* Mon titre principal */
-.hero-content h1 {
-    font-size: clamp(2rem, 5vw, 3.5rem);
-    font-weight: 800;
-    margin-bottom: 1rem;
-    max-width: 900px;
-    line-height: 1.1;
-}
-
-/* Mon sous-titre (Étude de cas) */
-.hero-content p {
-    font-size: 1.2rem;
-    font-weight: 400;
-    margin-bottom: 2.5rem;
-    color: #ccc;
-}
-
-/* Mon groupe d'input et bouton */
-.input-group {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    max-width: 450px;
-    margin: 0 auto;
-    gap: 15px;
-}
-
-.inputs-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-.inputs-container input {
-    padding: 18px;
-    font-size: 1rem;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background: rgba(0, 0, 0, 0.8);
-    color: white;
-    width: 100%;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    transition: 0.3s;
-}
-
-/* Message d'erreur */
-#error-message {
-    color: #ffa00a;
-    font-size: 0.9rem;
-    text-align: center;
-    margin-bottom: 10px;
-    display: none;
-    font-weight: 500;
-}
-
-/* Mon bouton commencer */
-.btn-commencer {
-    background-color: var(--accent-lily); /* Mis en rose pour le style démo */
-    color: white;
-    padding: 16px 40px;
-    font-size: 1.4rem;
-    border: none;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: 0.3s;
-    width: 100%;
-    font-weight: 700;
-}
-
-.btn-commencer:hover {
-    background-color: #ff1f81;
-    transform: scale(1.02);
-}
-
-/* LE RESPONSIVE */
-@media (max-width: 768px) {
-    .navbar { padding: 15px 5%; }
-    .logo { font-size: 1.4rem; }
-    .hero-content h1 { font-size: 1.8rem; }
-    .btn-commencer { font-size: 1.1rem; }
-}
+    <script src="script.js"></script>
+</body>
+</html>

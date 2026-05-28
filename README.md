@@ -8,7 +8,7 @@ Interface moderne et immersive pour une plateforme de streaming.
 - JavaScript
 
 ## 🔗 Accéder au projet
-[Insère ici ton lien GitHub Pages]
+https://devbylilyane.github.io/test-streamsite/
 
 ## 💡 Objectif
 Travailler sur la mise en page de catalogues interactifs et l'aspect visuel moderne (UI/UX) d'une plateforme média.

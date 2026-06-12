@@ -3,31 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LILYtab | Streaming</title>
+    <title>LILYplay | Streaming</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="site-background"></div>
 
     <nav class="navbar">
-        <a href="#" class="logo">LILY<span>tab</span></a>
-        <a href="#" class="btn-signin">Explorer</a>
+        <a href="#" class="logo">LILY<span>play</span> <span class="play-icon">▶</span></a>
+        <div class="nav-links">
+            <a href="#">Explorer</a>
+            <a href="#" class="btn-signin">Connexion</a>
+        </div>
     </nav>
 
     <header class="hero">
         <div class="hero-content">
             <h1>L'expérience streaming réinventée.</h1>
-            <p>Découvrez votre catalogue de films et séries avec élégance.</p>
+            <p>Accédez à votre catalogue avec élégance et simplicité.</p>
             
-            <div class="input-group">
-                <div class="inputs-container">
-                    <input type="text" id="demoUser" placeholder="Identifiant">
-                    <input type="password" id="demoPass" placeholder="Mot de passe">
-                    <div id="error-message"></div>
+            <div class="auth-box">
+                <input type="text" id="demoUser" placeholder="Email ou identifiant">
+                <input type="password" id="demoPass" placeholder="Mot de passe">
+                <button id="btnStart" class="btn-commencer">Se connecter</button>
+                <div class="auth-links">
+                    <a href="#">Mot de passe oublié ?</a>
+                    <a href="#">Créer un compte</a>
                 </div>
-                <button id="btnStart" class="btn-commencer">Tester le Design</button>
+                <div id="error-message"></div>
             </div>
         </div>
     </header>
+
+    <section class="features">
+        <div class="feature-card">
+            <h3>Haute Qualité</h3>
+            <p>Une expérience visuelle en 4K optimisée pour tous vos écrans.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Catalogue Infini</h3>
+            <p>Des milliers de films et séries mis à jour quotidiennement.</p>
+        </div>
+        <div class="feature-card">
+            <h3>Multi-support</h3>
+            <p>Reprenez votre film là où vous l'avez laissé, sur n'importe quel appareil.</p>
+        </div>
+    </section>
+
+    <section class="gallery">
+    <h2 class="section-title">Tendances actuelles</h2>
+    <div class="grid">
+        <div class="movie-card"><img src="https://images.unsplash.com/photo-1594909122845-11baa439b7bf?q=80&w=600&auto=format&fit=crop" alt="Film 1"></div>
+        <div class="movie-card"><img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=600&auto=format&fit=crop" alt="Film 2"></div>
+        <div class="movie-card"><img src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?q=80&w=600&auto=format&fit=crop" alt="Film 4"></div>
+        <div class="movie-card"><img src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?q=80&w=600&auto=format&fit=crop" alt="Film 7"></div>
+    </div>
+</section>
 
     <script src="script.js"></script>
 </body>
